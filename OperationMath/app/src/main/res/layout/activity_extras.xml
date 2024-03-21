@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264941"
+    tools:context=".ExtrasActivity">
+
+    <ImageButton
+        android:id="@+id/mapsImageButton"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#395A53"
+        android:contentDescription="Maps icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/galleryImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maps" />
+
+    <ImageButton
+        android:id="@+id/messageImageButton"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#395A53"
+        android:contentDescription="Maps icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/browserImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapsImageButton"
+        app:srcCompat="@drawable/message" />
+
+    <ImageButton
+        android:id="@+id/browserImageButton"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="25dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#395A53"
+        android:contentDescription="Maps icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/messageImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/galleryImageButton"
+        app:srcCompat="@drawable/browser" />
+
+    <ImageButton
+        android:id="@+id/galleryImageButton"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="25dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#395A53"
+        android:contentDescription="Maps icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mapsImageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gallery" />
+
+    <ImageButton
+        android:id="@+id/phoneImageButton"
+        android:layout_width="156dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#395A53"
+        android:contentDescription="Maps icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageImageButton"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/mapsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="MAPS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:contentDescription="Maps icon"
+        android:importantForAccessibility="yes"
+        app:layout_constraintEnd_toStartOf="@+id/galleryTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapsImageButton" />
+
+    <TextView
+        android:id="@+id/galleryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mapsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/galleryImageButton" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="Message"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/browserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageImageButton" />
+
+    <TextView
+        android:id="@+id/browserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="Browser"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/messageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/browserImageButton" />
+
+    <TextView
+        android:id="@+id/extrasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="125dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="EXTRAS"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/callTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="257dp"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="Phone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
