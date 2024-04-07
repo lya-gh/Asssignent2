@@ -13,50 +13,85 @@
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginBottom="172dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/disketmonoregular"
         android:text="EXTRAS"
         android:textColor="#264941"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beginButton" />
 
     <Button
         android:id="@+id/beginButton"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginStart="128dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginBottom="272dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/disketmonoregular"
         android:text="BEGIN"
         android:textColor="#264941"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="232dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="349dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="31dp"
         android:fontFamily="@font/disketmonobold"
         android:text="Operation: Math"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginHomeButton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="LOG IN"
+        android:textColor="#264941"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extrasButton" />
+
+    <Button
+        android:id="@+id/profileHomeButton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/disketmonoregular"
+        android:text="PROFILE"
+        android:textColor="#264941"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extrasButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
